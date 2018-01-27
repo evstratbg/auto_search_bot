@@ -27,4 +27,5 @@ class Users(BaseModel):
 
 
 if __name__ == '__main__':
+    Users.drop_table()
     Users.create_table()

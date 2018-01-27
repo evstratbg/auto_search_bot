@@ -1,7 +1,7 @@
 from telegram import Bot, Update, ReplyKeyboardMarkup
 from telegram.ext import ConversationHandler
 
-from bot.models import Users
+from models import Users
 from bot.logger import log
 from bot.data.keyboards import keyboard_start
 
@@ -13,9 +13,9 @@ def start(bot: Bot, update: Update):
     username = update.message.from_user.username
     last_name = update.message.from_user.last_name
 
-    user = Users.get_or_create(telegram_id=uid)
-    user.first_name = first_name,
-    user.last_name = last_name,
+    user, created = Users.get_or_create(telegram_id=uid)
+    user.first_name = first_name
+    user.last_name = last_name
     user.username = username
     user.save()
 

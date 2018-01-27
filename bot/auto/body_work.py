@@ -84,7 +84,7 @@ def get_phone_number(bot: Bot, update: Update, user_data: dict) -> int:
 
     contact = update.message.contact
 
-    what_to_repair = user_data['year']
+    what_to_repair = user_data['what_to_repair']
     brand = user_data['brand']
     handler_type = user_data['handler_type']
 

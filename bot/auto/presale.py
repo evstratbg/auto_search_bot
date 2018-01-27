@@ -51,7 +51,7 @@ def get_phone_number(bot: Bot, update: Update, user_data: dict) -> int:
     handler_type = user_data['handler_type']
     esimated_amount = user_data['esimated_amount']
 
-    msg = f'<b>{handler_type}</b>\n'
+    msg = f'<b>{handler_type}</b>\n\n'
     msg += f'<b>Марка:</b> {brand}\n'
     msg += f'<b>Год:</b> {year}\n'
     msg += f'<b>Примерная цена:</b> {esimated_amount}\n\n'

@@ -17,7 +17,6 @@ from bot.auto.search import (
     get_estimated_amount, get_auto_brand, get_year
 )
 
-from config import ADMIN_ID
 
 
 @log
@@ -73,7 +72,7 @@ def get_phone_number(bot: Bot, update: Update, user_data: dict) -> int:
     handler_type = user_data['handler_type']
     problem = user_data['problem']
 
-    msg = f'<b>{handler_type}</b>\n'
+    msg = f'<b>{handler_type}</b>\n\n'
     msg += f'<b>Марка:</b> {brand}\n'
     msg += f'<b>Год:</b> {year}\n'
     msg += f'<b>Проблема:</b> {problem}\n\n'

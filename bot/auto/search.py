@@ -163,7 +163,7 @@ def get_other_wishes(bot: Bot, update: Update, user_data: dict) -> int:
 
     handler_type = user_data['handler_type']
 
-    msg = f'<b>{handler_type}</b>\n'
+    msg = f'<b>{handler_type}</b>\n\n'
     msg += f'<b>Марка:</b> {brand}\n'
     msg += f'<b>Год:</b> {year}\n'
     msg += f'<b>Примерная цена:</b> {esimated_amount}\n\n'

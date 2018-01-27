@@ -34,7 +34,7 @@ def start_presale(bot: Bot, update: Update, user_data: dict) -> int:
         'reply_markup': ReplyKeyboardMarkup(back, resize_keyboard=1)
     }
     user_data['previous_msg'] = send_params
-    user_data['handler_type'] = 'Кузовной ремонт'
+    user_data['handler_type'] = 'Предпрожадная подготовка'
     bot.send_message(**send_params)
     return GET_CAR_BRAND
 

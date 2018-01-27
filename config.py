@@ -10,7 +10,7 @@ PG_CONN = {
 
 TOKENS = {
     'TEST': '',
-    'PROD': '538172451:AAEDpKFGdUsitagbhdo69l2Tz4-bIsDf9q4'
+    'PROD': ''
 }
 
 LOGGING_LEVELS = {'TEST': logging.DEBUG}

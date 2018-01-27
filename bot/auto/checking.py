@@ -81,11 +81,11 @@ def get_phone_number(bot: Bot, update: Update, user_data: dict) -> int:
     msg += f'Заказчик: <a href="tg://user?id={uid}">{first_name}</a>\n'
 
     bot.send_message(
-        ADMIN_ID,
+        -293221983,
         msg,
         parse_mode=ParseMode.HTML
     )
-    bot.send_contact(ADMIN_ID, **contact.to_dict())
+    bot.send_contact(-293221983, **contact.to_dict())
     bot.send_message(
         uid,
         'Передал!',

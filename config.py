@@ -10,9 +10,9 @@ PG_CONN = {
 
 TOKENS = {
     'TEST': '',
-    'PROD': ''
+    'PROD': '538172451:AAEDpKFGdUsitagbhdo69l2Tz4-bIsDf9q4'
 }
 
 LOGGING_LEVELS = {'TEST': logging.DEBUG}
 
-ADMIN_ID = 56631662
+ADMIN_ID = -293221983

@@ -24,9 +24,9 @@ def start_presale(bot: Bot, update: Update, user_data: dict) -> int:
     uid = update.message.from_user.id
     send_params = {
         'chat_id': uid,
-        'text': 'Продиагностируем всемэлектрические системы автомобиля и '
+        'text': 'Продиагностируем все электрические системы автомобиля и '
                 'выявим неисправности. Плюс в том, что к вам приедут и не '
-                'придется доламывать вашу машину, по пути в сервиса.\n'
+                'придется доламывать вашу машину, по пути в сервис.\n'
                 'Напишите марку автомобиля',
         'reply_markup': ReplyKeyboardMarkup(back, resize_keyboard=1)
     }

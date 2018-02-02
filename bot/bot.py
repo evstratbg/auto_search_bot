@@ -2,7 +2,7 @@ import logging
 from telegram.ext import CommandHandler, Updater
 
 from bot.utils.common import start
-from bot.auto import search, body_work, presale, checking
+from bot.auto import search, body_work, presale, checking, just_ask
 
 
 def run(logger_level, workers, bot):
@@ -17,6 +17,7 @@ def run(logger_level, workers, bot):
     body_work.register(dp)
     presale.register(dp)
     checking.register(dp)
+    just_ask.register(dp)
 
     dp.add_handler(CommandHandler('start', start))
     updater.start_polling()

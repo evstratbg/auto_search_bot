@@ -14,8 +14,6 @@ from bot.data.keyboards import back, keyboard_start
 from bot.utils.send_previous_msg import is_back
 from bot.logger import log
 from bot.bot import start
-from bot.auto.search import (
-    get_estimated_amount, get_auto_brand, get_year
 )
 
 from config import ADMIN_ID
@@ -42,6 +40,15 @@ def get_question(bot: Bot, update: Update, user_data: dict) -> int:
     uid = update.message.from_user.id
     message = update.message.text
     first_name = update.message.from_user.first_name
+
+    if is_back(message):
+        bot.send_message(
+            uid,
+            'Предыдущее меню',
+            reply_markup=ReplyKeyboardMarkup(keyboard_start)
+    )
+
+
 
     handler_type = user_data['handler_type']
 

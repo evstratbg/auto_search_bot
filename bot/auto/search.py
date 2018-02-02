@@ -71,11 +71,7 @@ def get_auto_brand(bot: Bot, update: Update, user_data: dict) -> int:
 
     send_params = {
         'chat_id': uid,
-        'text': 'Отлично! Теперь укажите год, например\n'
-                '<i>2009</i>\n'
-                '<i>От 2008</i>\n'
-                '<i>До 2010</i>\n'
-                '<i>От 2010 до 2012 или 2010-2012</i>\n',
+        'text': 'Отлично! Теперь укажите год',
         'parse_mode': ParseMode.HTML,
         'reply_markup': ReplyKeyboardMarkup(back, resize_keyboard=1)
     }
